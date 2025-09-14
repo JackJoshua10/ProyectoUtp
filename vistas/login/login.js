@@ -3,7 +3,7 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
 
     // Definir los usuarios y contraseñas con sus tipos
     var usuarios = [
-        { correo: "dante@unfv.edu.pe", contraseña: "dante123", tipo: "docente" },
+        { correo: "Jack@unfv.edu.pe", contraseña: "jack123", tipo: "docente" },
         { correo: "maria@unfv.edu.pe", contraseña: "maria456", tipo: "docente" },
         { correo: "juan@unfv.edu.pe", contraseña: "juan789", tipo: "alumno" },
         { correo: "ana@unfv.edu.pe", contraseña: "ana321", tipo: "alumno" }
