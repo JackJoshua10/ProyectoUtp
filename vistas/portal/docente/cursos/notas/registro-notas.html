@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universidad Nacional Federico Villarreal | Docentes</title>
+    <link rel="shortcut icon" href="../../../../../img/universidad/UNFV_ico.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="registro-notas.css">
+    <link rel="stylesheet" href="registro-notas-table.css">nk
+
+    <script type="module" src="registro-notas.js"></script>
+    <script type="module" src="registro-notas-table.js"></script>
+    <script type="module" src="registro-notas-export.js"></script>
+
+    <script src="https://unpkg.com/xlsx@0.16.9/dist/xlsx.full.min.js"></script>
+    <script src="https://unpkg.com/file-saverjs@latest/FileSaver.min.js"></script>
+    <script src="https://unpkg.com/tableexport@latest/dist/js/tableexport.min.js"></script>
+
+</head>
+
+<body>
+    <div class="sidevar">
+        <div class="top">
+            <div class="logo">
+                <img src="../../../../../img/universidad/Escudo_UNFV.png" alt="">
+                <span></span>
+            </div>
+            <i class="bx bx-menu" id="btn"></i>
+        </div>
+        <div class="user">
+            <img src="../../../../../img/universidad/Docente/FotoPerfil.jpg" alt="docente" class="user-img">
+            <div>
+                <p class="bold">Docente</p>
+            </div>
+        </div>
+        <ul>
+            <li>
+                <a href="../../cursos/cursos-docente.html" class="curso">
+                    <i class='bx bx-book curso'></i>
+                    <span class="nav-item">Cursos</span>
+                </a>
+            </li>
+            <li>
+                <a href="../../cursos/cursos-docente.html" class="ajustes">
+                    <i class='bx bx-cog ajustes'></i>
+                    <span class="nav-item">Ajustes</span>
+                </a>
+            </li>
+            <li>
+                <a href="../../../../login/login.html">
+                    <i class="bx bx-log-out"></i>
+                    <span class="nav-item">Logout</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="container">
+            <h1>REGISTRO DE NOTAS</h1>
+            <div class="button-container">
+                <button id="btnExportar">Exportar a Excel</button>
+                <button id="btnIncidencia">Incidencia de nota</button>
+                <button id="btnGuardar">Guardar</button>
+            </div>
+            <div class="table-container">
+                <table id="notasTable">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Nombre</th>
+                            <th>EP</th>
+                            <th>EF</th>
+                            <th>TA</th>
+                            <th>Promedio Final</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
